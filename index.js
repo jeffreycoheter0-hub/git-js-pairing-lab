@@ -112,7 +112,7 @@ console.log(betweenTwentyAndFourty(18));
 */
 
 //Problem 10 
-
+/*
 const largest = (nu1, nu2, nu3) => {
     if (nu1 > nu2 && nu1 > nu3) {
         return nu1
@@ -126,3 +126,4 @@ const largest = (nu1, nu2, nu3) => {
 console.log(largest(6, 7, 9));
 console.log(largest(20, 19, 56));
 console.log(largest(99, 95, 3));
+*/
