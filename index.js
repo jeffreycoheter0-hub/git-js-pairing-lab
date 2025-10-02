@@ -88,3 +88,10 @@ const isNegative = (n) => {
 };
 console.log(isNegative(3));
 */
+
+//Problem 8 
+
+const triangleArea = (numb1, numb2) => {
+    return numb1 * numb2 * 0.5
+}
+console.log(triangleArea(6, 7));
