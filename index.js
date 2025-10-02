@@ -25,7 +25,7 @@ multiplesOfThree((100));
 
 //Probelm 3
 
-const multiplesOfThreeOrFives = (n) => {
+/* const multiplesOfThreeOrFives = (n) => {
     for (let i = 1; i <= n; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
             console.log(i)
@@ -34,4 +34,17 @@ const multiplesOfThreeOrFives = (n) => {
         }
     }
 }
-multiplesOfThreeOrFives(100);
+multiplesOfThreeOrFives(100); */
+
+//Problem 4
+
+const untilNum = (n) => {
+    for (let i = 1; i <= n; i++) {
+        if (i <= n) {
+            console.log(i)
+        } else {
+
+        }
+    }
+};
+untilNum(40);
