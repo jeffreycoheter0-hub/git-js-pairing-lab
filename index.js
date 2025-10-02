@@ -61,3 +61,17 @@ multiply(54, 2);
 multiply(6, 7);
 multiply(5, 3);
 */
+
+//Problem 6
+
+const add = (num1, num2) => {
+    if (num1 === num2) {
+        console.log(num1 * 3 + num2 * 3)
+    } else {
+        console.log(num1 + num2)
+    }
+};
+
+add(5, 10);
+add(6, 7);
+add(9, 9);
