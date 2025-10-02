@@ -37,7 +37,7 @@ multiplesOfThree((100));
 multiplesOfThreeOrFives(100); */
 
 //Problem 4
-
+/*
 const untilNum = (n) => {
     for (let i = 1; i <= n; i++) {
         if (i <= n) {
@@ -48,3 +48,16 @@ const untilNum = (n) => {
     }
 };
 untilNum(40);
+untilNum(67);
+untilNum(32);
+*/
+
+//Problem 5
+/*
+const multiply = (n1, n2) => {
+    console.log(n1 * n2);
+}
+multiply(54, 2);
+multiply(6, 7);
+multiply(5, 3);
+*/
