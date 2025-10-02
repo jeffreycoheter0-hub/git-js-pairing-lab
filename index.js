@@ -90,8 +90,23 @@ console.log(isNegative(3));
 */
 
 //Problem 8 
-
+/*
 const triangleArea = (numb1, numb2) => {
     return numb1 * numb2 * 0.5
 }
 console.log(triangleArea(6, 7));
+*/
+
+//Problem 9
+/*
+const betweenTwentyAndFourty = (n) => {
+    if (n > 20 && n < 40) {
+        return true
+    } else {
+        return false
+    }
+};
+console.log(betweenTwentyAndFourty(54));
+console.log(betweenTwentyAndFourty(37));
+console.log(betweenTwentyAndFourty(18));
+*/
