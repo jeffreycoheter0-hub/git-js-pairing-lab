@@ -127,3 +127,52 @@ console.log(largest(6, 7, 9));
 console.log(largest(20, 19, 56));
 console.log(largest(99, 95, 3));
 */
+
+// Problem 14
+/*
+const absoluteNineteen = (a) => {
+    return Math.abs(a - 19);
+}
+console.log(absoluteNineteen(18));
+console.log(absoluteNineteen(20));
+console.log(absoluteNineteen(9341));
+
+
+//Problem 15
+const switchLetters = (newString) => {
+    if (newString.length < 2) {
+        return newString
+    } else {
+        let first = newString[0]
+        let last = newString[newString.length - 1]
+        let middle = newString.slice(1, newString.length - 1)
+
+        return last + middle + first
+    }
+
+};
+console.log(switchLetters("poppy"))
+console.log(switchLetters("zeri"))
+console.log(switchLetters("ao"))
+
+//Problem 16
+const changeString = (stri) => {
+    let stringAfter = "";
+    for (let i = 0; i < stri.length; i++) {
+        let code = stri[i].charCodeAt(0);
+        let nextCharacter;
+        if (stri[i] === "z") {
+            nextCharacter = "a";
+        } else if (stri[i] === "Z") {
+            nextCharacter = "A"
+        } else {
+            nextCharacter = String.fromCharCode(code + 1)
+        }
+        stringAfter += nextCharacter;
+    }
+    return stringAfter
+};
+
+console.log(changeString("aphelios"));
+console.log(changeString("qdkhdudc"));
+*/
