@@ -127,3 +127,59 @@ console.log(largest(6, 7, 9));
 console.log(largest(20, 19, 56));
 console.log(largest(99, 95, 3));
 */
+
+//Problem 11
+
+const printTime = () => {
+    const now = new Date();
+
+    // Get hours, minutes, and seconds
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    /*
+    Pad with leading zeros if less than 10
+    without padStart 4hour:09minute:05seconds AM would read like 4:9:5. With padStart it will read
+    like 04:09:05
+    */
+    hours = String(hours).padStart(2, '0');
+    minutes = String(minutes).padStart(2, '0');
+    seconds = String(seconds).padStart(2, '0');
+
+    // Return the formatted time string
+    return `${hours}:${minutes}:${seconds}`;
+}
+
+console.log(printTime());
+
+//Problem 12
+
+const isLeapYear = (n) => {
+    if (n % 4 === 0) {
+        return true
+    } else if (n % 400 === 0) {
+        return false
+    } else {
+        return false
+    }
+};
+/* LEAP YEARS
+2028, 2024, 2020, 2016, 2012, 2008... etc.
+*/
+console.log(isLeapYear(2000)); //should print true
+console.log(isLeapYear(1990)); //should print false
+
+
+//Problem 13
+
+const getExtention = (string) => {
+    let myString = ''; //this is where we are going to store the string
+    let character = '.'; //the character ' . ' we are trying to find
+    let place = ''; //where we find the character ' . ' in the string
+    for (i = 0; i <= string.indexOf(character); i++) { //finds where ' . ' is in the string
+        place = i; //in the example sonic.exe, 0 = s, 1 = o, 2 = n, 3 = i, 4 = c, 5 = . So i = 5 
+    }
+    return myString = string.slice(place); //starts counting from 5(' . ') and cuts off everything before .
+};
+console.log(getExtention('Sonic.exe'));
